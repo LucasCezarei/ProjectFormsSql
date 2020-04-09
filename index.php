@@ -142,8 +142,8 @@ include('_conn/database_conn.php');
                 <!------------------- [Cliente] ------------------->
                     <div class="form-group col-md-6">
                         <label class="label-letras">CLIENTE: </label><br/>
-                        <select id="framework" name="framework" class="form-control selectpicker" data-live-search="true" multiple>
-                        <option selected disabled></option>
+                        <select id="Cliente" name="Cliente" class="form-control">
+                        <option selected disabled>selecione um valor</option>
                         </select>
                         <span style="color: #aa0909; font-size: 12px; font-weight: bold;" id="Cliente_required"></span>
 

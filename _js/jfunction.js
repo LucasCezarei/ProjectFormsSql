@@ -9,13 +9,11 @@ $(document).ready(function(){
             method: "POST",
             data: {selected:selectede},
             success:function(data){
-                $('#framework').html(data);
-                $('#framework').trigger('change')
+                $('#Cliente').html(data);
+                $('#Cliente').trigger('change')
             }
         });
     });
-
-    $('.selectpicker').selectpicker();
 
     $('#multiple_select_form').on('submit', function(event){
         event.preventDefault();
@@ -63,7 +61,7 @@ $(document).ready(function(){
             $('#Grupo_required').text('');
         }
 
-        if($('#framework').val() == null){
+        if($('#Cliente').val() == null){
             $('#Cliente_required').text('Selecione um Cliente.');
             count_error++;
         }else{
